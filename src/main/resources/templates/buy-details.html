@@ -1,0 +1,34 @@
+<!--<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy</title>
+</head>
+<body>
+<header th:insert="~{blocks/header :: header}"></header>
+
+<div>
+    <h1>Совершение покупки</h1>
+    <form method="post">
+        <div th:each="el : ${product}">
+            <h3 th:text="${el.name}"/>
+            <p th:text="${el.description}"/>
+            <p th:text="${el.price} + ₽"/>
+        </div><br>
+        < !-- th:action="@{/buy/{id}(id=${el.id()})}" - ->
+
+        <div th:each="us : ${user_buyer}">
+            <h3 th:text="${us.username}"/>
+            <p th:text="${us.email}"/>
+        </div><br><!- -<input type="hidden" name="_csrf" th:value="${_csrf.token}" />- ->
+
+        <div><input type="submit" value="КУПИТЬ"/></div>
+
+    </form>
+
+</div>
+
+<footer th:insert="~{blocks/footer :: footer}"></footer>
+
+</body>
+</html>-->

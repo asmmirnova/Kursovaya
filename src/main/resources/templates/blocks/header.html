@@ -1,0 +1,10 @@
+
+<div th:fragment="header">
+    <div class="header">
+        <a href="/">Главная</a>
+        <a href="/shop">Оправы и линзы</a>
+        <a href="/account">Аккаунт</a>
+        <a href="/shopping-cart" th:attr = "onclick=|submitForm()|" id = "cartLink"><p>Корзина</p></a>
+        <a href="/shop/add">Добавить товар</a>
+    </div>
+</div>

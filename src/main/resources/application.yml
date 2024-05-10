@@ -1,0 +1,26 @@
+spring:
+  #security:
+  # user:
+  #  name: AlenaS
+  # password: 1029384756Aalena
+  datasource:
+    url: jdbc:mysql://localhost:3306/coursework
+    username: AlenaS
+    password: 1029384756Aalena
+      #mail:
+      # host: smtp.yandex.ru
+      #port: 465
+      #username: gornovowa@yandex.ru
+      #password: yaeeivrinx
+      #properties:
+      # mail:
+      #  smtp:
+      #   auth: true
+      #  starttls:
+      #   enable: true
+#      ssl:
+#     enable: true
+  session:
+    store-type: jdbc
+server:
+  port: 8080

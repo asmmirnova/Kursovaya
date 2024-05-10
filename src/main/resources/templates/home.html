@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poetsen+One&display=swap" rel="stylesheet">
+<!--    <link rel = "stylesheet" th:href = "@{/static/css/general.css}" >-->
+<!--    <link rel = "stylesheet" th:href = "@{/static/css/footer.css}" >-->
+    <!--    <link th:href = "/static/css/registration.css" rel = "stylesheet" >-->
+    <title>HomePage</title>
+</head>
+<body>
+<header th:insert="~{blocks/header :: header}"></header>
+
+<h1>Smirnova Alena IKBO-20-22 variant 22</h1>
+<form action="/logout" method="get">
+    <input type="submit" value="Logout">
+</form>
+<form action="/login" method="get">
+    <input type="submit" value="Login">
+</form>
+
+<footer th:insert="~{blocks/footer :: footer}"></footer>
+
+</body>
+</html>
